@@ -5,7 +5,7 @@ dataset/
 .vscode/
 .idea/
 *.pyc
-*.log
+#*.log
 log_tensorboard
 saved/
 *.lprof
@@ -13,3 +13,5 @@ saved/
 docs/build/
 wandb/*
 /ray_log*
+exp_hyper_log/
+optimal_config_large_eval/
