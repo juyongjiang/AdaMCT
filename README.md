@@ -5,7 +5,7 @@ This is our Pytorch implementation for the paper: "[AdaMCT: Adaptive Mixture of 
 ## Overview
 
 <p align="center">
-  <img src="./AdaMCT.png" alt="AdaMCT model architecture" width="600">
+  <img src="./AdaMCT.png" alt="AdaMCT model architecture" width="800">
   <br>
   <b>Figure</b>: AdaMCT Model Architecture.
 </p>
@@ -119,7 +119,7 @@ python run_recbole.py\
 
 ## AdaMCT
 
-### Dataset
+### Benchmarks Preparation
 
 Please, download three widely used benchmarks from [RecSysDatasets](https://github.com/RUCAIBox/RecSysDatasets) or [Google Drive](https://drive.google.com/drive/folders/1ahiLmzU7cGRPXf5qGMqtAChte2eYp9gI) constructed by RecBole's team. Then, place the preprocessed files in `./dataset` like the following.
 
@@ -160,19 +160,19 @@ bash run_adamct.sh
 
 The terminal output of final results will be like (we report `test results` in our paper):
 
-**Toys**
+**#Toys**
 ```bash
 Mon 05 Jun 2023 07:15:56 INFO  best valid : OrderedDict([('recall@1', 0.2533), ('recall@5', 0.4599), ('recall@10', 0.5609), ('recall@20', 0.6785), ('ndcg@1', 0.2533), ('ndcg@5', 0.3621), ('ndcg@10', 0.3947), ('ndcg@20', 0.4243)])
 Mon 05 Jun 2023 07:15:56 INFO  test result: OrderedDict([('recall@1', 0.2184), ('recall@5', 0.4132), ('recall@10', 0.5088), ('recall@20', 0.6252), ('ndcg@1', 0.2184), ('ndcg@5', 0.3203), ('ndcg@10', 0.3511), ('ndcg@20', 0.3804)])
 ```
 
-**Beauty**
+**#Beauty**
 ```bash 
 Mon 05 Jun 2023 02:37:56 INFO  best valid : OrderedDict([('recall@1', 0.2519), ('recall@5', 0.4626), ('recall@10', 0.5621), ('recall@20', 0.6704), ('ndcg@1', 0.2519), ('ndcg@5', 0.363), ('ndcg@10', 0.3951), ('ndcg@20', 0.4224)])
 Mon 05 Jun 2023 02:37:56 INFO  test result: OrderedDict([('recall@1', 0.2178), ('recall@5', 0.4207), ('recall@10', 0.5178), ('recall@20', 0.6314), ('ndcg@1', 0.2178), ('ndcg@5', 0.3241), ('ndcg@10', 0.3554), ('ndcg@20', 0.384)])
 
 ```
-**Sports**
+**#Sports**
 ```bash
 Mon 05 Jun 2023 08:40:20 INFO  best valid : OrderedDict([('recall@1', 0.222), ('recall@5', 0.469), ('recall@10', 0.6002), ('recall@20', 0.7392), ('ndcg@1', 0.222), ('ndcg@5', 0.3503), ('ndcg@10', 0.3926), ('ndcg@20', 0.4278)])
 Mon 05 Jun 2023 08:40:20 INFO  test result: OrderedDict([('recall@1', 0.1862), ('recall@5', 0.4097), ('recall@10', 0.5412), ('recall@20', 0.6871), ('ndcg@1', 0.1862), ('ndcg@5', 0.3019), ('ndcg@10', 0.3444), ('ndcg@20', 0.3813)])
