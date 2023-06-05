@@ -1,0 +1,8 @@
+learning_rate loguniform -8,0
+hidden_size choice [16,32,64,96,128]
+n_heads choice [2,4,8,16,32]
+reduction_ratio choice [1,2,5,10,25]
+kernel_size choice [3,5,7,9,11]
+hidden_dropout_prob loguniform -1,0
+attn_dropout_prob loguniform -1,0
+hidden_act choice ["gelu","relu","swish","tanh","sigmoid"]
