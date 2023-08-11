@@ -11,9 +11,12 @@ This is the official Pytorch implementation for our [CIKM 2023](https://uobevent
 ## Overview
 
 <p align="center">
-  <img src="./AdaMCT.png" alt="AdaMCT model architecture" width="700">
+  <img src="./asset/AdaMCT.png" alt="AdaMCT model architecture" width="700">
+</p>
+<p align="center">
+  <img src="./asset/Toy_Example.jpg" alt="AdaMCT model architecture" width="700">
   <br>
-  <b>Figure</b>: AdaMCT Model Architecture.
+  <b>Figure 1.</b> AdaMCT Model Architecture.
 </p>
 
 ## About RecBole
@@ -225,6 +228,14 @@ running parameters:
 ```
 
 More information about hyperparameter tuning can be found in [docs](https://recbole.io/docs/user_guide/usage/parameter_tuning.html).
+
+## Light-weight and High-efficiency
+
+<p align="center">
+  <img src="./asset/Light_Efficiency.jpg" alt="Light-weight and high-efficiency" width="700">
+  <br>
+  <b>Table 1.</b> Parameters number and execution efficiency analysis of SOTA models on Beauty dataset.
+</p>
 
 ## License
 RecBole uses [MIT License](./LICENSE). All data and code in this project can only be used for academic purposes.
