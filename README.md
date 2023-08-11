@@ -1,10 +1,10 @@
 # AdaMCT: Adaptive Mixture of CNN-Transformer for Sequential Recommendation
 
 [![Conda Latest Release](https://anaconda.org/aibox/recbole/badges/version.svg)](https://anaconda.org/aibox/recbole)
-[![License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](./LICENSE)
+[![License](https://img.shields.io/badge/License-CC%20By%20NC%204.0-red.svg)](./LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![arXiv](https://img.shields.io/badge/arXiv-RecBole-%23B21B1B)](https://arxiv.org/abs/2205.08776)
+[![arXiv](https://img.shields.io/badge/arXiv-AdaMCT-%23B21B1B)](https://arxiv.org/abs/2205.08776)
 
 This is the official Pytorch implementation for our [CIKM 2023](https://uobevents.eventsair.com/cikm2023) paper: "[AdaMCT: Adaptive Mixture of CNN-Transformer for Sequential Recommendation](./AdaMCT_CIKM2023.pdf)", which is based on a famous open-source framework [RecBole](#about-recbole).
 
