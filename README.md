@@ -1,11 +1,17 @@
 # AdaMCT: Adaptive Mixture of CNN-Transformer for Sequential Recommendation
 
-This is our Pytorch implementation for the paper: "[AdaMCT: Adaptive Mixture of CNN-Transformer for Sequential Recommendation]()", which is based on a famous open-source framework [RecBole](#about-recbole).
+[![Conda Latest Release](https://anaconda.org/aibox/recbole/badges/version.svg)](https://anaconda.org/aibox/recbole)
+[![License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](./LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![arXiv](https://img.shields.io/badge/arXiv-RecBole-%23B21B1B)](https://arxiv.org/abs/2205.08776)
+
+This is the official Pytorch implementation for our [CIKM 2023](https://uobevents.eventsair.com/cikm2023) paper: "[AdaMCT: Adaptive Mixture of CNN-Transformer for Sequential Recommendation](./AdaMCT_CIKM2023.pdf)", which is based on a famous open-source framework [RecBole](#about-recbole).
 
 ## Overview
 
 <p align="center">
-  <img src="./AdaMCT.png" alt="AdaMCT model architecture" width="800">
+  <img src="./AdaMCT.png" alt="AdaMCT model architecture" width="700">
   <br>
   <b>Figure</b>: AdaMCT Model Architecture.
 </p>
@@ -138,7 +144,7 @@ dataset
 
 ### Training & Inference
 
-Note that our experiments are conducted on a single NVIDIA A100 SXM4 80GB GPU. You can find our experimental logging files in `./exp_log`, including 
+Note that our experiments are conducted on a single NVIDIA A100 SXM4 80GB GPU. You can find our experimental logging files in [`./exp_log`](./exp_log), including 
 `AdaMCT-Amazon_Beauty-Jun-05-2023_01-47-32-ce1763`, `AdaMCT-Amazon_Sports_and_Outdoors-Jun-05-2023_04-49-07-5c1f03`, and `AdaMCT-Amazon_Toys_and_Games-Jun-05-2023_04-17-39-18a08b`. 
 
 ```bash
@@ -180,11 +186,11 @@ Mon 05 Jun 2023 08:40:20 INFO  test result: OrderedDict([('recall@1', 0.1862), (
 ```
 
 ## Auto-tuning Hyperparameter 
-Open `AdaMCT/hyper_adamct.test` and set several hyperparameters to auto-searching in parameter list. The following has two ways to search best hyperparameter:
+Open [`./hyper_adamct.test`](./hyper_adamct.test) and set several hyperparameters to auto-searching in parameter list. The following has two ways to search best hyperparameter:
 * **loguniform**: indicates that the parameters obey the uniform distribution, randomly taking values from e^{-8} to e^{0}.
 * **choice**: indicates that the parameter takes discrete values from the setting list.
 
-Here is our hyperpatermeter searching space for `hyper_adamct.test`: 
+Here is our hyperpatermeter searching space for [`./hyper_adamct.test`](./hyper_adamct.test): 
 ```bash
 learning_rate loguniform -8,0
 hidden_size choice [16,32,64,96,128]
@@ -222,3 +228,16 @@ More information about hyperparameter tuning can be found in [docs](https://recb
 
 ## License
 RecBole uses [MIT License](./LICENSE). All data and code in this project can only be used for academic purposes.
+
+## Citation
+If you use the data or code in this repo, please cite the repo.
+
+```
+@article{jiang2022adamct,
+  title={AdaMCT: adaptive mixture of CNN-transformer for sequential recommendation},
+  author={Jiang, Juyong and Zhang, Peiyan and Luo, Yingtao and Li, Chaozhuo and Kim, Jae Boum and Zhang, Kai and Wang, Senzhang and Xie, Xing and Kim, Sunghun},
+  journal={arXiv preprint arXiv:2205.08776},
+  year={2022}
+}
+```
+Naturally, you should also cite the original [RecBole](https://github.com/RUCAIBox/RecBole) Framework. 
