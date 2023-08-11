@@ -11,10 +11,10 @@ This is the official Pytorch implementation for our [CIKM 2023](https://uobevent
 ## Overview
 
 <p align="center">
-  <img src="./asset/AdaMCT.png" alt="AdaMCT model architecture" width="700">
+  <img src="./asset/Toy_Example.jpg" alt="AdaMCT model architecture" width="700">
 </p>
 <p align="center">
-  <img src="./asset/Toy_Example.jpg" alt="AdaMCT model architecture" width="700">
+  <img src="./asset/AdaMCT.png" alt="AdaMCT model architecture" width="700">
   <br>
   <b>Figure 1.</b> AdaMCT Model Architecture.
 </p>
@@ -232,7 +232,7 @@ More information about hyperparameter tuning can be found in [docs](https://recb
 ## Light-weight and High-efficiency
 
 <p align="center">
-  <img src="./asset/Light_Efficiency.jpg" alt="Light-weight and high-efficiency" width="700">
+  <img src="./asset/Light_Efficiency.jpg" alt="Light-weight and high-efficiency" width="600">
   <br>
   <b>Table 1.</b> Parameters number and execution efficiency analysis of SOTA models on Beauty dataset.
 </p>
