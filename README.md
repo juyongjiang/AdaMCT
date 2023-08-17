@@ -231,8 +231,8 @@ More information about hyperparameter tuning can be found in [docs](https://recb
 
 ## Light-weight and High-efficiency
 
-Although many works in the literature have emphasized the importance of the Positional-wise Feed-forward Network (FFN), our AdaMCT first attempts to remove FFN, leading to a tremendous decline of parameters (76% ~ 93% less). 
-We observe that it is attributed to the locality inductive bias injected into the Transformer and the module and layer-aware adaptive mixture units to adaptively determine the mixing importance of the global attention mechanism and local convolutional filter on a personalized basis. 
+Although many works in the literature have emphasized the importance of the Positional-wise Feed-forward Network (FFN) in Transformer, our AdaMCT first attempts to remove FFN, leading to a tremendous decline of parameters (76% ~ 93% less). 
+We observe that it is attributed to the locality inductive bias injected into Transformer and the module and layer-aware adaptive mixture units to adaptively determine the mixing importance of the global attention mechanism and local convolutional filter on a personalized basis. 
 On the other hand, it also provides an alternative backbone to significantly reduce the size of large language models (LLMs). We will explore it in our future work.  
 
 <p align="center">
